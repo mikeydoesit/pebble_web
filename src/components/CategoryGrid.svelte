@@ -16,40 +16,40 @@
 </style>
 
 <section class="category_grid">
-    <div class='grid_item'>
+    <a href="/search" class='grid_item'>
         <img src='/property.png' alt='property icon' />
         <span>Real estate</span>
-    </div>
-    <div class='grid_item'>
+    </a>
+    <a href="/search" class='grid_item'>
         <img src='/property.png' alt='property icon' />
         <span>Real estate</span>
-    </div>
-    <div class='grid_item'>
+    </a>
+    <a href="/search" class='grid_item'>
         <img src='/property.png' alt='property icon' />
         <span>Real estate</span>
-    </div>
-    <div class='grid_item'>
+    </a>
+    <a href="/search" class='grid_item'>
         <img src='/property.png' alt='property icon' />
         <span>Real estate</span>
-    </div>
-    <div class='grid_item'>
+    </a>
+    <a href="/search" class='grid_item'>
         <img src='/property.png' alt='property icon' />
         <span>Real estate</span>
-    </div>
-    <div class='grid_item'>
+    </a>
+    <a href="/search" class='grid_item'>
         <img src='/property.png' alt='property icon' />
         <span>Real estate</span>
-    </div>
-    <div class='grid_item'>
+    </a>
+    <a href="/search" class='grid_item'>
         <img src='/property.png' alt='property icon' />
         <span>Real estate</span>
-    </div>
-    <div class='grid_item'>
+    </a>
+    <a href="/search" class='grid_item'>
         <img src='/property.png' alt='property icon' />
         <span>Real estate</span>
-    </div>
-    <div class='grid_item'>
+    </a>
+    <a href="/search" class='grid_item'>
         <img src='/property.png' alt='property icon' />
         <span>Real estate</span>
-    </div>
+    </a>
 </section>

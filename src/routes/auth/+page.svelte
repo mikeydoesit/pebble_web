@@ -1,5 +1,5 @@
 <script>
-    import { userNumber, userName, passwordSet, password, passwordConfirm, userEmail } from '../../lib/store'
+    import { userNumber, userName, avatar, passwordSet, password, passwordConfirm, userEmail } from '../../lib/store'
     import { fade } from 'svelte/transition'
     import { imask } from 'svelte-imask';
     import { pocketbase, currentUser } from '../../lib/pocketbase';
@@ -15,11 +15,10 @@
     let successModalState = false
     let successSignInModalState = false
     let successfulPasswordResetModalState = false
-    let phoneNumberAlreadyRegistered = false
     let failureSignInModalState = false
     let failureModalState = false
 
-    let nameInput, phoneInput, signUpPhoneInput, emailInput, passwordInput, passwordInputWrapper, passwordConfirmInput, passwordInputConfirmWrapper, successModal, successSignInModal, signInForm, successPasswordResetModal, submitting_sign_in, submitting_sign_up, submitting_password_reset, regPasswordInputWrapper, regPasswordInput;
+    let avatarInput, nameInput, phoneInput, signUpPhoneInput, emailInput, passwordInput, passwordInputWrapper, passwordConfirmInput, passwordInputConfirmWrapper, successModal, successSignInModal, signInForm, successPasswordResetModal, submitting_sign_in, submitting_sign_up, submitting_password_reset, regPasswordInputWrapper, regPasswordInput;
 
     const authState = window.localStorage.getItem('isAuthUser') || '0'
 
@@ -31,6 +30,7 @@
         var newUserBody = {
                         "username": $userNumber,
                         "email": $userEmail,
+                        "avatar": $avatar,
                         "emailVisibility": true,
                         "password": $password,
                         "passwordConfirm": $password,
@@ -139,6 +139,10 @@
         let trimmed = e.target.value.split('-').join('')
         userNumber.set(trimmed)
         window.localStorage.setItem('userNumber', trimmed)
+    }
+    const setAvatar = (e) => {
+        avatar.set(e.target.files[0])
+        console.log(e.target.files[0])
     }
     const setEmail = (e) => {
         userEmail.set(e.target.value)
@@ -541,6 +545,14 @@
                         id="userNumber" 
                         type="tel"
                         placeholder="0555-555-555" /> 
+                    </div>
+                    <div class="formItem" bind:this={avatarInput}>
+                        <label for="avatarInput">Choose a profile picture</label>
+                        <input
+                        on:change={setAvatar}
+                        accept="image/png, image/jpeg"
+                        id="avatarInput" 
+                        type="file" /> 
                     </div>
                     <div class="formItem" bind:this={emailInput}>
                         <label for="email">Email</label>

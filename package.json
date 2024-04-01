@@ -27,6 +27,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"algoliasearch": "^4.22.1",
 		"pocketbase": "^0.21.1",
 		"svelte-imask": "^1.2.0"
 	}

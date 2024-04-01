@@ -7,15 +7,19 @@ export default {
       card_bg: '#f2f2f2',
       white: '#ffffff',
       text_grey: '#d1d1d1',
-      text_primary: '#d1d1d1',
+      text_primary: '#b1afaf',
       black: '#222831',
       highlight: '#ffbc10',
-      transparent: 'transparent'
+      black_two: '#41788c', 
+      transparent: 'transparent',
+      border_grey: '#edf0f3'
     },
     gridTemplateColumns: {
       'tapbarmenu': '1fr 1fr 1fr 1fr 1fr',
+      'filter_btns': '2fr 2fr 1fr 1fr',
       'category_grid': 'repeat(3, minmax(0, 1fr))',
-      'featured_grid': 'repeat(2, minmax(0, 1fr))'
+      'featured_grid': 'repeat(2, minmax(0, 1fr))',
+      'upload_thumbnail_grid': 'repeat(5, minmax(0, 1fr))'
     },
     gridTemplateRows: {
       'tapbarmenu': '100%',

@@ -1,4 +1,6 @@
 <script>
+    import PageHeading from '../../components/PageHeading.svelte';
+    import SellForm from '../../components/SellForm.svelte';
     import { pocketbase } from '../../lib/pocketbase';
 
     if(!pocketbase.authStore.isValid) {
@@ -7,5 +9,8 @@
 </script>
 
 <section>
-    Sell
+    <PageHeading 
+        page_title='SELL'
+    />
+    <SellForm />
 </section>
