@@ -1,3 +1,11 @@
+<script>
+    import emblaCarouselSvelte from 'embla-carousel-svelte'
+
+    let options = { loop: true }
+
+    export let featured_products = []
+</script>
+
 <style lang="postcss">
     .homepage_featured {
         @apply mt-10 px-4 mb-16;

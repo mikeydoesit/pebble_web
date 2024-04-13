@@ -1,5 +1,6 @@
 <script>
     export let page_title;
+    export let back_btn;
 
     const back_to_prev = () => {
         window.history.back();
@@ -19,8 +20,10 @@
 </style>
 
 <section class="page_heading">
-    <div class="back_btn" on:click={back_to_prev}>
-        <img src="/arrow.png" alt='back' />
-    </div>
+    {#if back_btn}
+        <div class="back_btn" on:click={back_to_prev}>
+            <img src="/arrow.png" alt='back' />
+        </div>
+    {/if}
     <h1>{page_title}</h1>
 </section>

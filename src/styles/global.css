@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 @layer base {
-    html {
+    html, body {
         font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
         max-width: 576px;
         margin: 0 auto;
         background-color: #feffff;
+        overflow-x: hidden;
     }
 }
 

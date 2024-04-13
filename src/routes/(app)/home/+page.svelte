@@ -1,9 +1,14 @@
 <script>
-    import HomepageHeading from '../../../components/HomepageHeading.svelte';
     import CategoryGrid from '../../../components/CategoryGrid.svelte';
     import HomepageFeatured from '../../../components/HomepageFeatured.svelte';
+    import PageHeading from '../../../components/PageHeading.svelte'
+    import Search from '../../../components/SearchBox.svelte'
 </script>
 
-<HomepageHeading />
+<PageHeading 
+    back_btn={false}
+    page_title={'HOME'}
+/>
+<Search />
 <CategoryGrid />
 <HomepageFeatured />

@@ -1,8 +1,8 @@
 <script>
-    import { userNumber, userName, avatar, passwordSet, password, passwordConfirm, userEmail } from '../../lib/store'
+    import { userNumber, userName, avatar, passwordSet, password, passwordConfirm, userEmail } from '../../../lib/store'
     import { fade } from 'svelte/transition'
     import { imask } from 'svelte-imask';
-    import { pocketbase, currentUser } from '../../lib/pocketbase';
+    import { pocketbase, currentUser } from '../../../lib/pocketbase';
     // import { PUBLIC_POCKETBASE_URL, PUBLIC_REGISTER_USER_URL } from '$env/static/public';
 
 

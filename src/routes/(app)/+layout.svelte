@@ -4,12 +4,12 @@
 </script>
 
 <style lang="postcss">
-  .layout_wrapper {
+  .layout_wrapper_with_tapbar {
       @apply relative max-w-[576px] bg-white h-screen;
   }
 </style>
 
-<section class="layout_wrapper">
+<section class="layout_wrapper_with_tapbar">
   <slot />
   <Tapbar />
 </section>
